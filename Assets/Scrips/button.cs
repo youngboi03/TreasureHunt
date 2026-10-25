@@ -11,12 +11,14 @@ public class button : MonoBehaviour
 
     private void Awake()
     {
-        music = GameObject.FindGameObjectWithTag("audio").GetComponent<audio>();
+        // Scene Menu không có object tag "audio"
+        GameObject audioObj = GameObject.FindGameObjectWithTag("audio");
+        if (audioObj != null) music = audioObj.GetComponent<audio>();
     }
 
     void Start()
     {
-        back.gameObject.SetActive(false);
+        if (back != null) back.gameObject.SetActive(false);
     }
 
     public void chuyenHD()
@@ -39,8 +41,11 @@ public class button : MonoBehaviour
     public void bt_back()
     {
         back.gameObject.SetActive(true);
-        music.PlaySfnhac(music.backG);
-        music.StopG();
+        if (music != null)
+        {
+            music.PlaySfnhac(music.backG);
+            music.StopG();
+        }
     }
 
     static void LoadScene(int index)
