@@ -1,6 +1,6 @@
-# Truy Tìm Kho Báu (Treasure Hunt)
+# Treasure Hunt
 
-A 2D side-scrolling platformer built with Unity. Guide the hero through three levels, shoot down monsters with your bow, avoid water and traps, light up the lamp posts to open the gates and reach the treasure.
+*Truy Tìm Kho Báu* — a 2D side-scrolling platformer built with Unity. Guide the hero through three levels, shoot down monsters with your bow, avoid water and traps, light up the lamp posts to open the gates and reach the treasure.
 
 ## Features
 
@@ -29,7 +29,7 @@ A 2D side-scrolling platformer built with Unity. Guide the hero through three le
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/youngboi03/TruyTimKhoBau.git
+   git clone https://github.com/youngboi03/TreasureHunt.git
    ```
 2. Open the folder with Unity Hub using Unity 2022.3.16f1. The first import rebuilds the `Library/` folder and can take a few minutes.
 3. Open `Assets/Scenes/Menu.unity` and press **Play**.
